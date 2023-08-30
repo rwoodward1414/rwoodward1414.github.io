@@ -1,6 +1,25 @@
-img {
+@font-face {
+    font-family: 'cascadia_code';
+    src: url('fonts/CascadiaCode.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'cascadia_code';
+}
+
+aside {
     float: left;
-    width:  100px;
-    height: 100px;
-    object-fit: cover;
+}
+
+aside a {
+    display: block;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
