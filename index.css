@@ -8,18 +8,55 @@
 
 body {
     font-family: 'cascadia_code';
+    margin-left: 20vw;
+    margin-right: 17vw;
+    margin-bottom: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex: 1;
 }
 
 aside {
     float: left;
+    width: auto;
+    padding-right: 20px;
 }
 
 aside a {
     display: block;
+    padding-bottom: 10px;
 }
 
 main {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+    width: 75%;
+    flex: 1;
+}
+
+main h1 {
+    margin-top: 0;
+}
+
+ul {
+    column-count: 3;
+}
+
+#gradient {
+    height: 15px;
+    background-image: linear-gradient(to right,rgb(250, 194, 155), rgb(203, 241, 192));
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    ul {
+        column-count: 1;
+    }
 }
